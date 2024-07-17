@@ -1,6 +1,6 @@
 let loginButton = document.querySelector('button');
-let usernameInput = document.querySelector('#username');
-let passwordInput = document.querySelector('#password');
+const usernameInput = document.querySelector('#username');
+const passwordInput = document.querySelector('#password');
 
 function verifyLogin(username, password) {
   const validUsernames = ['admin1', 'admin2', 'admin3'];
