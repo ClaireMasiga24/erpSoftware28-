@@ -34,11 +34,12 @@ loginButton.addEventListener('click', () => {
 
 //Mr.Andrew's answer to redirection I will add event listeners to the link to sales agentpage
 //First I'm adding a script tag to the id
-let salesAgentsLink = document.querySelector('#sales-agents-link');
 
-  salesAgentsLink.addEventListener('click', () => {
-    window.location.href = 'salesAgents.html';
-  });
+let salesAgentsLink = document.getElementById('sales-agents-link');
+salesAgentsLink.addEventListener('click', () => {
+  window.location.href = 'salesAgents.html';
+});
+
   //Now the code for redirection
   
 

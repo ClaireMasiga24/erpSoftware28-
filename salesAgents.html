@@ -17,12 +17,12 @@
 		<button id="redirect-btn"></button>
 	</form>
 	<script>
-const redirectBtn = document.querySelector('#redirect-btn');//The script only works when i put it in this html file
-
+const redirectBtn = document.getElementById('redirect-btn');
 redirectBtn.addEventListener('click', () => {
   console.log('Button clicked!');
   window.location.href = 'admin.html';
 });
+
 
 	</script>
 </body>
