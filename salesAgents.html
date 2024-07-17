@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<h1>Sales Agent Page</h1>
+	<button id="redirect-btn">Back to Admin Page</button><!--I added a button to the sales agent page with an id for redirection-->
+
+	<form>
+		<label for="sales_amount">Sales Amount:</label>
+		<input type="number" id="sales_amount" name="sales_amount"><br><br>
+		<label for="sales_description">Sales Description:</label>
+		<input type="text" id="sales_description" name="sales_description">
+		<button id="redirect-btn"></button>
+	</form>
+	<script>
+const redirectBtn = document.querySelector('#redirect-btn');//The script only works when i put it in this html file
+
+redirectBtn.addEventListener('click', () => {
+  console.log('Button clicked!');
+  window.location.href = 'admin.html';
+});
+
+	</script>
+</body>
+</html>

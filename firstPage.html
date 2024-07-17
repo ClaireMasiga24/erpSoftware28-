@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Hoe Grocery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="firstPage">
+  <header>
+    <h2 id="welcome-heading" style="font:italic ; color: black;"> Happy Hoe Grocery</h2>
+  </header>
+  <form>
+    <div class="row">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="row">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="row">
+      <button id="login-button">Login</button>
+    </div>
+    <div class="row">
+      <p>Don't have an account? <button id="Signup-button">Sign-Up</button></p>
+    </div>
+    <input type="checkbox" id="remember-me" />
+    <label for="remember-me" style="font-size: small;">Stay Logged-in</label>
+  </form>
+  <footer>
+    <p id="tagline">© Copyright 2024.All rights reserved.</p>
+  </footer>
+  <script>
+    let loginButton = document.querySelector('#login-button');
+    let usernameInput = document.querySelector('#username');
+    let passwordInput = document.querySelector('#password');
+
+    function verifyLogin(username, password) {
+      const validUsernames = ['admin1', 'admin2', 'admin3'];
+      const validPassword = 'see';
+      return validUsernames.includes(username) && password === validPassword;
+    }
+
+    loginButton.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default form submission behavior
+      let username = usernameInput.value.trim();
+      let password = passwordInput.value.trim();
+
+      if (verifyLogin(username, password)) {
+        window.location.href = "admin.html";
+      } else {
+        alert('Invalid login credentials');
+      }
+    });
+  </script>
+</body>
+</html>
+

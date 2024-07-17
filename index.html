@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Happy Hoe Grocery</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing page" style="background-color: #FFFFFF">
+
+    <div class="logo"  >
+        <img src="OIP (4).jpeg" alt="Happy Hoe logo" class="logo image circular" width="500px" height="auto" />
+    </div>
+    
+<div class="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  
+  </div>
+    </div>
+<script>
+    // Start the animation
+const dots = document.querySelector(".loader");
+dots.classList.add('visible');
+
+
+// Set a timeout to redirect to the first page after 3 seconds
+setTimeout(() => {
+  window.location.replace ("firstPage.html");
+}, 3000);
+</script>
+
+</body>
+</html>
